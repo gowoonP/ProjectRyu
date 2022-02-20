@@ -376,7 +376,7 @@ background-color:#ffffff;}
 				</li>
                 <li><a href="../mypage/wish.html">찜 리스트</a></li>
 				<li class="respCartArea"><a href="../order/cart.html"><span designElement="text" textIndex="7"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >장바구니</span><span class="cart_cnt1">0</span></a></li>
-				<li><a href="../mypage.html" designElement="text" textIndex="8"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >마이페이지</a></li>
+				<li><a href="../mypage/my_order.html"8"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >마이페이지</a></li>
 				<li><a href="../service/cs8998.html?designMode=1" designElement="text" textIndex="9"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >고객센터</a></li>
 				<!--li><a href="/mypage/order_catalog" designElement="text">ORDER</a></li-->
 				<!--li><a href="/service/cs" designElement="text">CS CENTER</a></li-->
@@ -402,15 +402,75 @@ background-color:#ffffff;}
 				<button type="button" class="search_close">닫기</button>
 			</div>
 			<script>
+				$("")
 				$(".btn_search.btn_mo").click(function() {
 					$(this).toggleClass("active");
 					$(".layout_header").toggleClass("search_mode");
 				});
 				$(".mo_search_area .search_close").click(function() {
-					$(".search_new .contetns_area").hide();
 					$(this).parent().siblings(".btn_search.btn_mo").toggleClass("active");
 					$(".layout_header").toggleClass("search_mode");
+					$(".search_new .contetns_area").hide();
 				});
+				function enterkey() {
+					if (window.event.keyCode == 13) {
+						 document.location.href = '/goods/search?search_text=' + $('.mo_search_text').val();
+                    }
+                }
+                $("#recentArea ul.tab_btns li:first-child").click(function(){
+                    $("#recent-searched-list").css("display", "block");
+                    $("#recent-item-list").css("display", "none");
+                    if($("#recentArea ul li:last-child").hasClass("on")){
+                    $(this).toggleClass("on");
+                    $(this).siblings("li").toggleClass("on");
+                    }
+                })
+                $("#recentArea ul.tab_btns li:last-child").click(function(){
+                    $("#recent-item-list").css("display", "block");
+                    $("#recent-searched-list").css("display", "none");
+                    $(this).toggleClass("on");
+                    $(this).siblings("li").toggleClass("on");
+                })
+                $(".search_box").click(function(){
+                    $(".contetns_area").css("display","block");
+                    $("#recentArea ul li:first-child").addClass("on");
+                    if($("#recentArea ul li:last-child").hasClass("on")){
+                        $("#recentArea ul li:last-child").removeClass("on");
+                    }
+                })
+
+                $(".search_close").click(function(){
+                    $(".contetns_area").css("display","none");                
+                    if($("#recentArea ul li:last-child").hasClass("on")){
+                        $("#recentArea ul li:last-child").toggleClass("on");
+                        $("#recent-searched-list").css("display", "block");
+                        $("#recent-item-list").css("display", "none");
+                    }else if($("#recentArea ul li:first-child").hasClass("on")){
+                        $("#recentArea ul li:last-child").removeClass("on");
+                        
+                    }
+                });
+                
+                $(".searching_item_close").click(function(){
+                    $(this).parent("li.recent_search_item").remove();
+                })
+
+                $("li.menu_item:first-child").click(function(){
+                    $(".searching_item_close").parent("li.recent_search_item").remove();
+                })
+				$(".btnRecentAuto.off").click(function(){
+                    $(".btnRecentAuto.off").css("display", "none");
+                    $(".btnRecentAuto.on").css("display", "block");
+                    $("#recentSearchedList").css("display", "none")
+                    $("#recentSearchedGuide").css("display", "block")
+                })
+                $(".btnRecentAuto.on").click(function(){
+                    $(".btnRecentAuto.off").css("display", "block");
+                    $(".btnRecentAuto.on").css("display", "none");
+                    $("#recentSearchedList").css("display", "block")
+                    $("#recentSearchedGuide").css("display", "none")
+                })
+ 
 			</script>
 			<!-- //선택 노출 -->
 

@@ -2798,7 +2798,7 @@ label.checkbox_allselect .txt { display:inline-block; vertical-align:middle; pad
 
 input[type='text'].res_bbs_search_input { /*width:220px; */}
 input[type='text'].res_bbs_search_input:focus { border-color:#357bc3 ; outline:none; }
-@media only screen and (max-width:479px) {
+@media only screen and (max-width:1133px) {
 	input[type='text'].res_bbs_search_input { width:calc(100% - 38px); }
 	.bbs_top_wrap .right2 input[type='text'].res_bbs_search_input:focus {width:calc(100% - 38px);border-width:2px; }
 	.board_detail_btns .btn_go_list {margin:30px auto 0 auto;}
@@ -2847,7 +2847,7 @@ input[type='text'].res_bbs_search_input:focus { border-color:#357bc3 ; outline:n
 	.board_goods_list>li.info .title { font-size:14px; }
 	.board_goods_list>li.info .type { font-size:13px; }
 }
-@media only screen and (max-width:479px) {
+@media only screen and (max-width:480px) {
 	.board_goods_select_display.v3 .goods_loop_area { width:calc(100% - 10px); }
 }
 
@@ -2899,7 +2899,7 @@ td>.goodsviewbox:first-child { border:none; }
 .search_key dd {display:inline-block;}
 .search_key dd a {display:inline-block;padding:0 20px;height:33px;line-height:37px;margin:0 2px;border:1px solid #bbb;font-size:15px;font-weight:normal;color:#777;}
 .search_key dd a:hover {color:#00a79d;border-color:#00a79d;font-weight:bold;}
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1123px) {
 	.searchform {width:100%;}
 	.searchform input {height:34px;line-height:34px;}
 	.searchform .btn_resp.size_b {width:34px;min-width:34px;height:34px;background-size:20px;}
@@ -3958,7 +3958,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 	.layout_header .nav_wrap .respCategoryList .nav_category_all { margin-right:10px; }
 }
 
-@media only screen and (max-width:1023px) {
+@media only screen and (max-width:1123px) {
 	.gnb_bnr_slide { display:none; }
 	.resp_top_hamburger { left:4%; margin-top:-12px; }
 	.layout_header .bookmark { margin-left:0; }
@@ -3983,7 +3983,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 
 	#resp_promo { margin-left:-10px; margin-right:-10px; }
 }
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1023px) {
 	.all_list_contents .all_list_depth1>li { min-width:0; width:calc(25% - 10px); }
 	.layout_header .util_wrap .resp_wrap {padding:0;}
 	.layout_header .util_wrap .resp_wrap h1.logo_area {display:none;}
@@ -4116,16 +4116,12 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 .resp_top_search .search_ver2 .search_new .highlight { font-weight:500; color:#ed3347; }
 .resp_top_search .search_ver2 .search_new .event .highlight { color:#0098ff; }
 
-@media only screen and (max-width: 1160px) {
-
-}
-
 @media only screen and (max-width:1023px) {
 	.resp_top_search { right:10px; top:50%; margin-top:-21px; }
 	.resp_top_search a.btn_search_open { width:26px; height:26px; margin-top:7px; background:url('../images/common/btn_zoom.png') 50% 50% no-repeat; background-size:100%; }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1123px) {
 	.resp_top_search .search_ver2.on {transform:none;}
 	.resp_top_search .search_ver2 .search_new .contetns_area {top:52px;}
 	.resp_top_search .search_ver2 .search_new .input_area .cont { height:43px; }
@@ -4176,6 +4172,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 @media all and (max-width: 1310px) {
 	.search_nav {padding:20px 4%;}
 }
+
 .search_filter { border:1px #aaa solid; font-size:17px; line-height:1.4; color:#222;}
 .search_filter.no_filter { border:none; }
 .search_filter label { margin:0; }
@@ -4418,7 +4415,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 
 	.search_filter .message { text-align:center; padding-top:20px; padding-bottom:20px; }
 }
-
+/*헤헤*/
 @media only screen and (max-width:767px) {
 	.search_filter .filter_detail_item.li_align>li { width:calc(33.33% - 3px); }
 }
@@ -4488,7 +4485,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 .searched_item_display .warning_text { font-size:15px; }
 
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1023px) {
 	.searched_item_display .item_info_area {padding:12px 8% 0 8%;}
 	.searched_item_display .item_info_area .goods_name_area .keyArea {display:none;}
 	.searched_item_display .item_info_area .goods_price_area .consumer_price {font-size:15px;color:transparent;}
@@ -4601,7 +4598,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 	[data-displaytype='lattice'][data-column='6']>ul>li { width:20%; } /* pc 6개 - 5 - 4 - 3 - 모바일 2개 */
 	[data-displaytype='lattice'][data-column='5']>ul>li { width:25%; } /* pc 5개, 태블릿(대) 4개, 태블릿(소) 3개, 모바일 2개 */
 }
-@media only screen and (max-width:860px) {
+@media only screen and (max-width:850px) {
 	.searched_item_display>ul>li { width:33.33%; }
 	.searched_item_display[data-displaytype='list']>ul>li { display:block; width:auto; margin-top:0; padding:15px 0; border:none; border-top:1px #eee solid; }
 	.searched_item_display[data-displaytype='list']>ul>li:first-child { border-top:none; }
@@ -5144,7 +5141,7 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 	.visual_title .visual_gon { left:40px; }
 	.visual_title .img_area img { max-width:120%; margin-left:-10%; margin-right:-10%; }
 }
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:766px) {
 	.page_banner_area1 .simg { max-width:140%; margin-left:-20%; margin-right:-20%; }
 	.page_banner_area1 .sliderB .text2 { font-size:40px; }
 	.page_banner_area1 .sliderB .text_wrap { margin-top:-7px; }
@@ -5980,4 +5977,6 @@ div.goodsPopupLayerBtnWrap {margin-top:20px; border-top:1px solid #ddd}
 	#goods_view .bigdata-goods-list .goods_list li.gl_item { width:50% !important; }
 	#goods_view .bigdata-goods-list .goods_list span.gli_image { height:50vw !important; }
 }
+
+
 /* ############## // 42991/제품상세페이지-추천상품-다른고객통계 ############## */

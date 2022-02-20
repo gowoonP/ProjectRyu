@@ -351,7 +351,7 @@ background-color:#ffffff;}
 				</li>
                 <li><a href="../mypage/wish.html">찜 리스트</a></li>
 				<li class="respCartArea"><a href="../order/cart.html"><span designElement="text" textIndex="7"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >장바구니</span><span class="cart_cnt1">0</span></a></li>
-				<li><a href="../mypage.html" designElement="text" textIndex="8"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >마이페이지</a></li>
+				<li><a href="../mypage/my_order.html"8"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >마이페이지</a></li>
 				<li><a href="../service/cs8998.html?designMode=1" designElement="text" textIndex="9"  textTemplatePath="cmVzcG9uc2l2ZV92ZXIxX2RlZmF1bHRfZ2xfMS9sYXlvdXRfaGVhZGVyL3N0YW5kYXJkLmh0bWw=" >고객센터</a></li>
 				<!--li><a href="/mypage/order_catalog" designElement="text">ORDER</a></li-->
 				<!--li><a href="/service/cs" designElement="text">CS CENTER</a></li-->
@@ -1197,7 +1197,7 @@ $(function(){
 </style>
 <div id="itemstmplayer" class="hide"></div>
 
-	<div id="catalog_page"  >
+	<form id="catalog_page"  >
 		<div class="search_nav" style="min-height:38px;"></div>
 
 	<!--[ 상단 꾸미기 HTML ]-->
@@ -1232,25 +1232,229 @@ $(function(){
 			})
 		</script>
 	</div>
-
-	<!-- ------- 검색필터, 추천상품, 상품정렬( 파일위치 : [스킨폴더]/goods/_search_form_light.html ) ------- -->
-	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
-@@ 검색필터, 추천상품, 상품정렬 @@
-- 파일위치 : [스킨폴더]/goods/_search_form_light.html
+	<div class="goods_list_best swiper-container" id="best-list"><!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+@@ "상품리스트 페이지" 상품 영역 @@
+- 파일위치 : [스킨폴더]/goods/best_pick_templete.html
+- 관련 페이지들 : 카테고리, 지역, 브랜드, 검색결과, 신상품, 베스트, 이벤트, 사은품 이벤트, 미니샵
 ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<ul class="swiper-wrapper abClear">
+    <li class="swiper-slide">
+        <div class="rankPro">
+            <div class="rank"><div>BEST<div>1</div></div></div>
+                            <a href="/goods/view?no=71">
+								<!--이미지교체-->
+                    <img src="https://www.duoback.co.kr/data/goods/1/2021/05/71_tmp_7b2a2d18745d5446f21cfbff3fd3171e3211list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+                    
+                    <span class="detail_icons">
+					<span class="d_icon d_reco">추천</span>
+				</span>
+                </a>
+                <div class="tpCont">
+                    <div class="tagArea">
+                                                <div class="pcontTag free">무료배송</div><div class="pcontTag as as3">3년AS</div><div class="pcontTag dpoint">D포인트</div>
+                                            </div>
+                    <div class="proCont">
+                    <span class="proTitle">
+                        BAINTZ
+                    </span>
+                        <!--<div class="keyArea">
+                            <span>#EINS-1-Swivel</span> <span>#스위블웜</span>                         </div>-->
+                        <div class="proMd"><div class="bPoint">[쿠폰3,000원]</div>바인츠 스위블 웜체어(EINS-1-Swivel)</div>
+                    </div>
+                    <div class="proBtm">
+                        <!--<a class="abIcon cart" href="/goods/view?no=71">장바구니 담기</a>-->
+                        <a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 71)">위시리스트</a>
+                    </div>
+                </div>
+                <div class="proPrc">
+                    <div class="sale">
+                                                <span class="strike">139,000원</span>
+                        <span class="per">36%</span>
+                        <span class="salePrc">
+                            <strong>90,000</strong>원
+                            <!-- <strong>184,000</strong><span>원</span> -->
+                        
 
+                    </span>
+                    </div>
+<!--                    <a class="review" href="/goods/view?no=71&tab=review">리뷰 <span>3</span></a>-->
+                                        <a class="review" href="/goods/view?no=71&amp;tab=review">리뷰 <span><span class="crema-product-reviews-count num crema-applied" data-product-code="71" data-hide-if-zero="0">3</span></span></a>
+                </div>
+        </div>
+    </li>
+    <li class="swiper-slide">
+        <div class="rankPro">
+            <div class="rank"><div>BEST<div>2</div></div></div>
+                            <a href="/goods/view?no=70">
+							<!--이미지교체-->
+                    <img src="https://www.duoback.co.kr/data/goods/1/2021/05/70_tmp_3ecd9737f3a0b82265259c01199ea1503060list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+                    
+                    <span class="detail_icons">
+					<span class="d_icon d_hit">HIT</span>
+				</span>
+                </a>
+                <div class="tpCont">
+                    <div class="tagArea">
+                                                <div class="pcontTag free">무료배송</div><div class="pcontTag as as3">3년AS</div><div class="pcontTag dpoint">D포인트</div>
+                                            </div>
+                    <div class="proCont">
+                    <span class="proTitle">
+                        BAINTZ
+                    </span>
+                        <!--<div class="keyArea">
+                            <span>#EINS-04F</span> <span>#라움 체어</span>                         </div>-->
+                        <div class="proMd"><div class="bPoint">[쿠폰3,000원]</div>바인츠 아인스 라움체어(EINS-04F)</div>
+                    </div>
+                    <div class="proBtm">
+                        <!--<a class="abIcon cart" href="/goods/view?no=70">장바구니 담기</a>-->
+                        <a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 70)">위시리스트</a>
+                    </div>
+                </div>
+                <div class="proPrc">
+                    <div class="sale">
+                                                <span class="strike">159,000원</span>
+                        <span class="per">31%</span>
+                        <span class="salePrc">
+                            <strong>110,000</strong>원
+                            <!-- <strong>184,000</strong><span>원</span> -->
+                        
 
-<form name="goodsSearchForm" id="goodsSearchForm" method="get">
-<input type="hidden" name="parent" value="" />
+                    </span>
+                    </div>
+<!--                    <a class="review" href="/goods/view?no=70&tab=review">리뷰 <span>1</span></a>-->
+                                        <a class="review" href="/goods/view?no=70&amp;tab=review">리뷰 <span><span class="crema-product-reviews-count num crema-applied" data-product-code="70" data-hide-if-zero="0">1</span></span></a>
+                </div>
+        </div>
+    </li>
+    <li class="swiper-slide">
+        <div class="rankPro">
+            <div class="rank"><div>BEST<div>3</div></div></div>
+                            <a href="/goods/view?no=634">
+								<!--이미지교체-->
+                    <img src="https://www.duoback.co.kr/data/goods/1/2021/07/634_tmp_90892cc90e9a0ece6b3fcf1be63e60699888list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+                    
+                    <span class="detail_icons">
+					<span class="d_icon d_new">NEW</span>
+				</span>
+                </a>
+                <div class="tpCont">
+                    <div class="tagArea">
+                                                <div class="pcontTag free">무료배송</div><div class="pcontTag as as1">1년AS</div><div class="pcontTag dpoint">D포인트</div>
+                                            </div>
+                    <div class="proCont">
+                    <span class="proTitle">
+                        BAINTZ
+                    </span>
+                        <!--<div class="keyArea">
+                            <span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BQ-6S</span>                         </div>-->
+                        <div class="proMd"><div class="bPoint">[쿠폰3,000원]</div>바인츠 BQ-6S</div>
+                    </div>
+                    <div class="proBtm">
+                        <!--<a class="abIcon cart" href="/goods/view?no=634">장바구니 담기</a>-->
+                        <a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 634)">위시리스트</a>
+                    </div>
+                </div>
+                <div class="proPrc">
+                    <div class="sale">
+                                                <span class="strike">179,000원</span>
+                        <span class="per">33%</span>
+                        <span class="salePrc">
+                            <strong>120,000</strong>원
+                            <!-- <strong>184,000</strong><span>원</span> -->
+                        
 
-<input type="hidden" name="osearchtext" value="" />
-<input type="hidden" name="ship_grp_seq" value="" />
-<input type="hidden" name="event" value="" />
-<input type="hidden" name="gift" value="" />
-<input type="hidden" name="page" value="1" />
-<input type="hidden" name="searchMode" value="catalog" />
+                    </span>
+                    </div>
+                </div>
+        </div>
+    </li>
+    <li class="swiper-slide">
+        <div class="rankPro">
+            <div class="rank"><div>BEST<div>4</div></div></div>
+                            <a href="/goods/view?no=72">
+								<!--이미지교체-->
+                    <img src="https://www.duoback.co.kr/data/goods/1/2021/05/72_tmp_65a21df4233c59437f6cbe49420481fa2621list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+                    
+                    <span class="detail_icons">
+					<span class="d_icon d_hit">HIT</span>
+				</span>
+                </a>
+                <div class="tpCont">
+                    <div class="tagArea">
+                                                <div class="pcontTag free">무료배송</div><div class="pcontTag as as3">3년AS</div><div class="pcontTag dpoint">D포인트</div>
+                                            </div>
+                    <div class="proCont">
+                    <span class="proTitle">
+                        BAINTZ
+                    </span>
+                        <!--<div class="keyArea">
+                            <span>#BE-052</span>                         </div>-->
+                        <div class="proMd"><div class="bPoint">[쿠폰3,000원]</div>바인츠 슬림체어(BE-052)</div>
+                    </div>
+                    <div class="proBtm">
+                        <!--<a class="abIcon cart" href="/goods/view?no=72">장바구니 담기</a>-->
+                        <a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 72)">위시리스트</a>
+                    </div>
+                </div>
+                <div class="proPrc">
+                    <div class="sale">
+                                                <span class="strike">99,000원</span>
+                        <span class="per">28%</span>
+                        <span class="salePrc">
+                            <strong>72,000</strong>원
+                            <!-- <strong>184,000</strong><span>원</span> -->
+                        
 
-<div id="filterResultCount">21</div>
+                    </span>
+                    </div>
+                </div>
+        </div>
+    </li>
+    <li class="swiper-slide">
+        <div class="rankPro">
+            <div class="rank"><div>BEST<div>5</div></div></div>
+                            <a href="/goods/view?no=78">
+							<!--이미지교체-->
+                    <img src="https://www.duoback.co.kr/data/goods/1/2021/05/78_tmp_6408b100d37fc35dc9ae22c656902af62827list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+                    
+                    <span class="detail_icons">
+					
+				</span>
+                </a>
+                <div class="tpCont">
+                    <div class="tagArea">
+                                                <div class="pcontTag free">무료배송</div><div class="pcontTag as as1">1년AS</div><div class="pcontTag dpoint">D포인트</div>
+                                            </div>
+                    <div class="proCont">
+                    <span class="proTitle">
+                        BAINTZ
+                    </span>
+                        <!--<div class="keyArea">
+                            <span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#BR01</span>                         </div>-->
+                        <div class="proMd"><div class="bPoint">[쿠폰3,000원]</div>바인츠 BR-01</div>
+                    </div>
+                    <div class="proBtm">
+                        <!--<a class="abIcon cart" href="/goods/view?no=78">장바구니 담기</a>-->
+                        <a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 78)">위시리스트</a>
+                    </div>
+                </div>
+                <div class="proPrc">
+                    <div class="sale">
+                                                <span class="strike">130,000원</span>
+                        <span class="per">43%</span>
+                        <span class="salePrc">
+                            <strong>75,000</strong>원
+                            <!-- <strong>184,000</strong><span>원</span> -->
+                        
+
+                    </span>
+                    </div>
+                </div>
+        </div>
+    </li>
+</ul>
+<div class="swiper-scrollbar"></div></div>
+
 <div class="search_filter_wrap" data-ezmark="undo">
 	<!-- 필터 -->
 	<ul id="searchFilter" class="search_filter">
@@ -1272,59 +1476,93 @@ $(function(){
 	<!-- 상품디스플레이 파일들 폴더 위치 : /data/design/ ( ※ /data 폴더는 /skin 폴더 상위 폴더입니다. ) -->
 
 	<!-- 검색된 상품 정렬 -->
+    <form name="goodsSearchForm" id="goodsSearchForm" method="get">
+<input type="hidden" name="parent" value="">
+
+<input type="hidden" name="osearchtext" value="">
+<input type="hidden" name="ship_grp_seq" value="">
+<input type="hidden" name="event" value="">
+<input type="hidden" name="gift" value="">
+<input type="hidden" name="page" value="1">
+<input type="hidden" name="searchMode" value="catalog">
+
+<div id="filterResultCount">21</div>
+<div class="search_filter_wrap" data-ezmark="undo">
+	<!-- 필터 -->
+	<ul id="searchFilter" class="search_filter no_filter">
+
+		<!-- 20201125 결과내재검색 이동 -->
+
+	</ul>
+
+	<!-- 필터된 항목 -->
+	<div id="searchFilterSelected" class="search_filter_selected" style="display: none;">
+		<ul class="selected_item_area">
+		<li data-filtertype="category" data-type="category" data-filteritem="category_0010" data-value="c0010"><a class="remove" href="#">바인츠</a><input type="hidden" name="category" value="c0010"></li></ul>
+		<div class="selected_etc_area">
+			<a class="btn_all_cancel" href="#" title="전체해제" onclick="resetParams();"></a>
+		</div>
+	</div>
+
+	<!--[ 추천상품 출력(추천상품 디스플레이 편집 : 관리자 > 상품리스트 페이지 > 설정 > 페이지 추천상품 ) ]-->
+	<!-- 상품디스플레이 파일들 폴더 위치 : /data/design/ ( ※ /data 폴더는 /skin 폴더 상위 폴더입니다. ) -->
+
+	
     <ul id="filteredItemSorting" class="filtered_item_sorting">
 		<li class="item_total">
 			<a href="javascript:void(0)" id="btnFilterOpen" class="total">21</a>
 		</li>
 		<li class="item_display">
-			<label class="display display_lattice active ">
-				<input type="radio" name="filter_display" value="lattice" onclick="filterDisplay()" checked />격자 반응형
+			<label class="display display_lattice active">
+				<input type="radio" name="filter_display" value="lattice" onclick="filterDisplay()" checked="">격자 반응형
 			</label>
-			<label class="display display_list  ">
-				<input type="radio" name="filter_display" value="list" onclick="filterDisplay()" />리스트 반응형
+			<label class="display display_list">
+				<input type="radio" name="filter_display" value="list" onclick="filterDisplay()">리스트 반응형
 			</label>
 		</li>
 		<li class="item_viewnum">
 			<select name="per">
-				<option value="10"  >&nbsp;10개씩 보기&nbsp;</option>
-				<option value="16"  >&nbsp;16개씩 보기&nbsp;</option>
-				<option value="20"  >&nbsp;20개씩 보기&nbsp;</option>
-				<option value="40" selected >&nbsp;40개씩 보기&nbsp;</option>
-				<option value="100"  >&nbsp;100개씩 보기&nbsp;</option>
-				<option value="200"  >&nbsp;200개씩 보기&nbsp;</option>
+				<option value="10">&nbsp;10개씩 보기&nbsp;</option>
+				<option value="16">&nbsp;16개씩 보기&nbsp;</option>
+				<option value="20">&nbsp;20개씩 보기&nbsp;</option>
+				<option value="40" selected="">&nbsp;40개씩 보기&nbsp;</option>
+				<option value="100">&nbsp;100개씩 보기&nbsp;</option>
+				<option value="200">&nbsp;200개씩 보기&nbsp;</option>
 			</select>
 		</li>
 		<li class="item_order">
-			<p id="mobileSortingSelected"></p>
+			<p id="mobileSortingSelected">
+					상품리뷰순
+					</p>
 			<ul class="list">
 				<li>
-					<label >
-						<input type="radio" name="sorting" value="sale"  />많이팔린순
+					<label class="">
+						<input type="radio" name="sorting" value="sale" checked="">많이팔린순
 					</label>
 				</li>
 				<li>
-					<label >
-					<input type="radio" name="sorting" value="saleper"  />할인율순
-					</label>
-				</li>
-				<li>
-					<label >
-					<input type="radio" name="sorting" value="review"  />상품리뷰순
+					<label class="">
+					<input type="radio" name="sorting" value="saleper">할인율순
 					</label>
 				</li>
 				<li>
 					<label class="active">
-					<input type="radio" name="sorting" value="ranking" checked />좋아요순
+					<input type="radio" name="sorting" value="review">상품리뷰순
 					</label>
 				</li>
 				<li>
-					<label >
-					<input type="radio" name="sorting" value="low_price"  />낮은가격순
+					<label class="">
+					<input type="radio" name="sorting" value="ranking">좋아요순
 					</label>
 				</li>
 				<li>
-					<label >
-					<input type="radio" name="sorting" value="high_price"  />높은가격순
+					<label>
+					<input type="radio" name="sorting" value="low_price">낮은가격순
+					</label>
+				</li>
+				<li>
+					<label class="">
+					<input type="radio" name="sorting" value="high_price">높은가격순
 					</label>
 				</li>
 			</ul>
@@ -1345,19 +1583,19 @@ $(function(){
 		</li>
 		<li>
 			<select name="ab_sorting">
-				<option value="sale" >많이팔린순</option>
-				<option value="saleper" >할인율순</option>
-				<option value="review" >상품리뷰순</option>
-				<option value="ranking" selected>좋아요순</option>
-				<option value="low_price" >낮은가격순</option>
-				<option value="high_price" >높은가격순</option>
+				<option value="sale" selected="">많이팔린순</option>
+				<option value="saleper">할인율순</option>
+				<option value="review">상품리뷰순</option>
+				<option value="ranking">좋아요순</option>
+				<option value="low_price">낮은가격순</option>
+				<option value="high_price">높은가격순</option>
 			</select>
 		</li>
 	</ul>
 </div>
 </form>
 <script type="text/javascript">
-var brand_best_icon = "../../interface.firstmall.kr/firstmall_plus/sample_img/responsive_ver1_default_gl/brand/brand_main_20190215214621.gif";
+var brand_best_icon = "https://interface.firstmall.kr/firstmall_plus/sample_img/responsive_ver1_default_gl/brand/brand_main_20190215214621.gif";
 $(document).ready(function() {
 	filterDisplay();
 
@@ -1404,57 +1642,67 @@ $(document).ready(function() {
 		/**/
 	/**/
 		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-	/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-	/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-	/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-	/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-		/**/
-	/**/
-		/**/
 	$('#searchFilterSelected .selected_item_area').append(aParams['category']);
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+	/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+	/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+	/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+	/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+	/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+		/**/
+	/**/
 		/**/
 		/**/
 		/**/
@@ -1472,7 +1720,7 @@ $(document).ready(function() {
 
 	// 210428. ry4nkim. 가격 검색
 	$('[name=ab_price]').on('change', function () {
-		var range = $(this).val().split('../index.html');
+		var range = $(this).val().split('/');
 		$('[data-searchname=min_price]').val(range[0]);
 		$('[data-searchname=max_price]').val(range[1]);
 		$('#priceApply').click();
@@ -1505,63 +1753,1368 @@ function filterDisplay(){
 }
 
 </script>
+<div id="searchedItemDisplay" class="searched_item_display" data-displaytype="lattice"><!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+@@ "상품리스트 페이지" 상품 영역 @@
+- 파일위치 : [스킨폴더]/goods/search_list_template.html
+- 관련 페이지들 : 카테고리, 지역, 브랜드, 검색결과, 신상품, 베스트, 이벤트, 사은품 이벤트, 미니샵
+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-	<!-- ------- //검색필터, 추천상품, 상품정렬 ------- -->
+<ul class="ab_list_type">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
+@@ goods_list_style1 @@
+- 파일 위치 : /data/design_list/goods_list_style1.html
+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-	<!-- ------- 상품 영역( data-displaytype : "lattice", "list" ), 파일위치 : [스킨폴더]/goods/search_list_template.html ------- -->
-	<div id="searchedItemDisplay" class="searched_item_display" data-displaytype="lattice"></div>
-	<!-- ------- //상품 영역 ------- -->
+
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=71">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/71_tmp_7b2a2d18745d5446f21cfbff3fd3171e3211list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_reco">추천</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as3">3년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#EINS-1-Swivel</span> <span>#스위블웜</span> 			</div>-->
+
+						<a href="/goods/view?no=71"></a><div class="span"><a href="/goods/view?no=71">[쿠폰3,000원]<span class="name">바인츠 스위블 웜체어(EINS-1-Swivel)</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">36</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">139,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">36</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">90,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/2.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=71">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 71)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+							<a href="/goods/gift_view?no=71&amp;tab=review">
+					<!--					<span class="review">리뷰 <b class="num">3</b></span>-->
+					<span class="review">리뷰 <b class="num"><span class="crema-product-reviews-count crema-applied" data-product-code="71" data-hide-if-zero="0">3</span></b></span>
+
+<!--					<span class="crema-product-reviews-count num" data-product-code="" data-hide-if-zero="0">0</span>-->
+
+				</a>
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=70">
+					<!--이미지교체>-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/70_tmp_3ecd9737f3a0b82265259c01199ea1503060list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_hit">HIT</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as3">3년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#EINS-04F</span> <span>#라움 체어</span> 			</div>-->
+
+						<a href="/goods/view?no=70"></a><div class="span"><a href="/goods/view?no=70">[쿠폰3,000원]<span class="name">바인츠 아인스 라움체어(EINS-04F)</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">31</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">159,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">31</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">110,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/6.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=70">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 70)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+							<a href="/goods/gift_view?no=70&amp;tab=review">
+					<!--					<span class="review">리뷰 <b class="num">1</b></span>-->
+					<span class="review">리뷰 <b class="num"><span class="crema-product-reviews-count crema-applied" data-product-code="70" data-hide-if-zero="0">1</span></b></span>
+
+<!--					<span class="crema-product-reviews-count num" data-product-code="" data-hide-if-zero="0">0</span>-->
+
+				</a>
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=3131">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/10/3131_tmp_6179aeb223a8b50951bee4b183e76aee4764list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BP-01</span> 			</div>-->
+
+						<a href="/goods/view?no=3131"></a><div class="span"><a href="/goods/view?no=3131">[쿠폰3,000원]<span class="name">바인츠 BP-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">26</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">119,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">26</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">89,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=3131">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 3131)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=634">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/07/634_tmp_90892cc90e9a0ece6b3fcf1be63e60699888list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_new">NEW</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BQ-6S</span> 			</div>-->
+
+						<a href="/goods/view?no=634"></a><div class="span"><a href="/goods/view?no=634">[쿠폰3,000원]<span class="name">바인츠 BQ-6S</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">33</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">179,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">33</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">120,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/12.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=634">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 634)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=633">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/07/633_tmp_d292751e4c9c4ff0d2a2c7a4145297042655list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_new">NEW</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BQ-6L</span> 			</div>-->
+
+						<a href="/goods/view?no=633"></a><div class="span"><a href="/goods/view?no=633">[쿠폰3,000원]<span class="name">바인츠 BQ-6L</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">28</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">199,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">28</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">144,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/12.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=633">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 633)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=632">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/07/632_tmp_146804c212378e1be63a8d198169e8ae6641list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_new">NEW</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BQ-6LW</span> 			</div>-->
+
+						<a href="/goods/view?no=632"></a><div class="span"><a href="/goods/view?no=632">[쿠폰3,000원]<span class="name">바인츠 BQ-6LW</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">28</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">199,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">28</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">145,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/12.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=632">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 632)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=631">
+						<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/07/631_tmp_551097c34c23dd84ad07ec2887ecdf430672list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_new">NEW</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BQ-2PL</span> 			</div>-->
+
+						<a href="/goods/view?no=631"></a><div class="span"><a href="/goods/view?no=631">[쿠폰3,000원]<span class="name">바인츠 BQ-2PL</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">29</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">169,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">29</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">121,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/12.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=631">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 631)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=630">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/07/630_tmp_1d75690f08441a912c4c3e1d9eb6aa491991list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_new">NEW</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#인테리어</span> <span>#인테리어의자</span> <span>#바인츠 BQ-2L</span> 			</div>-->
+
+						<a href="/goods/view?no=630"></a><div class="span"><a href="/goods/view?no=630">[쿠폰3,000원]<span class="name">바인츠 BQ-2L</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">36</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">175,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">36</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">112,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/12.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=630">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 630)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=400">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/06/400_tmp_f2d7547afb4c32154c131e1ec04134ac9953list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#책상</span> <span>#데스크</span> <span>#가림막</span> <span>#가림판</span> <span>#파티션</span> 			</div>-->
+
+						<a href="/goods/view?no=400"></a><div class="span"><a href="/goods/view?no=400"><span class="name">바인츠 테이블 펠트스크린(그린/그레이)(BAFS012)</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">50</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">80,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">50</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">40,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=400">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 400)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=84">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/84_tmp_d3c91a771be7c79d33c2792cdf1733119152list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_one">1+1</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#인테리어</span> <span>#인테리어의자</span> <span>#BS02</span> 			</div>-->
+
+						<a href="/goods/view?no=84"></a><div class="span"><a href="/goods/view?no=84">[5%쿠폰]<span class="name">[1+1]바인츠 BS-02 패키지</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">32</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">290,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">32</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">198,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/9.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=84">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 84)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=82">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/82_tmp_30c02c23f3875e45877e6ce5830881067613list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_one">1+1</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#인테리어</span> <span>#인테리어의자</span> <span>#BK01</span> 			</div>-->
+
+						<a href="/goods/view?no=82"></a><div class="span"><a href="/goods/view?no=82">[5%쿠폰]<span class="name">[1+1]바인츠 BK-01 패키지</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">34</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">276,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">34</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">184,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/9.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=82">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 82)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=81">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/81_tmp_7cf5caab01cb75ecab97bab8598633115950list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_one">1+1</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#인테리어</span> <span>#인테리어의자</span> <span>#BA01</span> 			</div>-->
+
+						<a href="/goods/view?no=81"></a><div class="span"><a href="/goods/view?no=81">[5%쿠폰]<span class="name">[1+1]바인츠 BA-01 패키지</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">43</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">290,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">43</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">167,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/9.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=81">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 81)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=80">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/80_tmp_fc50e39fbdbda4e55ac58a169eea5f175139list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#BS02</span> 			</div>-->
+
+						<a href="/goods/view?no=80"></a><div class="span"><a href="/goods/view?no=80">[쿠폰3,000원]<span class="name">바인츠 BS-02</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">29</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">145,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">29</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">104,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=80">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 80)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=79">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/79_tmp_49328fa5f6c54cb36c3a660b29b95ab65892list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#BS01</span> 			</div>-->
+
+						<a href="/goods/view?no=79"></a><div class="span"><a href="/goods/view?no=79">[쿠폰3,000원]<span class="name">바인츠 BS-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">29</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">150,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">29</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">107,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=79">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 79)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=78">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/78_tmp_6408b100d37fc35dc9ae22c656902af62827list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#BR01</span> 			</div>-->
+
+						<a href="/goods/view?no=78"></a><div class="span"><a href="/goods/view?no=78">[쿠폰3,000원]<span class="name">바인츠 BR-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">43</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">130,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">43</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">75,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=78">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 78)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=77">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/77_tmp_596c18464c75f8ddb3923c196dfc3a517144list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#BK01</span> 			</div>-->
+
+						<a href="/goods/view?no=77"></a><div class="span"><a href="/goods/view?no=77">[쿠폰3,000원]<span class="name">바인츠 BK-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">35</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">138,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">35</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">90,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=77">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 77)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=76">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/76_tmp_e773951f2c67f05261faf23e4d9427251100list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span>#인테리어</span> <span>#인테리어의자</span> <span>#BD01</span> 			</div>-->
+
+						<a href="/goods/view?no=76"></a><div class="span"><a href="/goods/view?no=76">[쿠폰3,000원]<span class="name">바인츠 BD-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">44</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">195,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">44</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">111,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=76">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 76)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=75">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/75_tmp_27d072d385f7bfc29fc44f818b057b426224list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#바인츠</span> <span># 인테리어</span> <span># 인테리어의자</span> <span># BA01</span> 			</div>-->
+
+						<a href="/goods/view?no=75"></a><div class="span"><a href="/goods/view?no=75">[쿠폰3,000원]<span class="name">바인츠 BA-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">44</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">145,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">44</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">82,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=75">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 75)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=74">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/74_tmp_ca55d05cfe2c77262a6e24bfff204fdd3143list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#</span> 			</div>-->
+
+						<a href="/goods/view?no=74"></a><div class="span"><a href="/goods/view?no=74">[쿠폰3,000원]<span class="name">바인츠 스윙스툴 YOYO-01</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">44</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">158,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">44</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">89,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=74">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 74)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=73">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/73_tmp_1a4aa114255c47b8d754cf515df4474b1804list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as1">1년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#</span> 			</div>-->
+
+						<a href="/goods/view?no=73"></a><div class="span"><a href="/goods/view?no=73">[쿠폰3,000원]<span class="name">바인츠 스윙체어 YOYO-02</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">31</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">289,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">31</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">200,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=73">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 73)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+<li class="goods_list_style1">
+	<div class="item_img_area">
+					<a href="/goods/view?no=72">
+					<!--이미지교체-->
+				<img src="https://www.duoback.co.kr/data/goods/1/2021/05/72_tmp_65a21df4233c59437f6cbe49420481fa2621list1.jpg" onerror="this.src='/data/skin/responsive_ver1_default_gl_1/images/common/noimage.gif';" alt="">
+				
+				<span class="detail_icons">
+										<span class="d_icon d_hit">HIT</span>
+									</span>
+			</a>
+			<!-- 상품 상태 표시 -->
+
+	</div>
+	<ul class="item_info_area">
+		<li class="pcontTagArea">
+						<span class="pcontTag free">무료배송</span><span class="pcontTag as as3">3년AS</span><span class="pcontTag dpoint">D포인트</span>
+					</li>
+
+		<li class="goods_name_area">
+			<span class="brand_name">
+				BAINTZ
+			</span>
+			<!--<div class="keyArea">
+				<span>#BE-052</span> 			</div>-->
+
+						<a href="/goods/view?no=72"></a><div class="span"><a href="/goods/view?no=72">[쿠폰3,000원]<span class="name">바인츠 슬림체어(BE-052)</span></a>
+					</div></li>
+
+		<!-- 비회원 대체문구 -->
+		<li class="goods_price_area">
+			<span class="discount_rate list_late">
+				<b class="num">28</b>%
+			</span>
+			<span class="consumer_price">
+				<span class="num">99,000</span>원
+			</span>
+			<div class="sale_wrap">
+				<span class="discount_rate box_late">
+					<b class="num">28</b>%
+				</span>
+				<span class="sale_price">
+					<b class="num">72,000</b>원
+				</span>
+			</div>
+		</li>
+
+
+		<!-- 아이콘 모음 -->
+		<li class="goods_icon_area">
+			<img src="/data/icon/goods/6.gif" alt="">
+		</li>
+
+		<!-- 반응형 zzim -->
+		<li class="goods_btm_area proBtm">
+			<!--<a class="abIcon cart" href="/goods/view?no=72">장바구니 담기</a>-->
+			<a class="abIcon wish " href="javascript:;" onclick="display_goods_zzim(this, 72)">위시리스트</a>
+		</li>
+		<li class="goods_sold_area">
+				<div class="ab_star">
+					<span class="ev_active"><b style="width:90%;"></b></span>
+					<div class="star_count">4.5 / 5</div>
+				</div>
+		</li>
+	</ul>
+</li>
+
+</ul>
+
+
+
+
 </div>
+<!--검색된 상품 정렬 끝-->
 
-<div id="wish_alert">
-	<div class="wa_on"></div>
-	<div class="wa_off"></div>
-	<div class="wa_msg"></div>
-</div>
-
-<script type="text/javascript">
-	var nowCategory = 'c0010';
-	$(function() {
-		// 검색 페이지 -> 디폴트 검색박스 open
-		$('#searchModule #searchVer2').show();
-
-		// 컬러 필터 - 255, 255, 255 --> border
-		colorFilter_white( '#searchFilterSelected .color_type' );
-	});
-</script>
-    
-<!-- bigin impression tracking start -->
-<script>
-	var biginImpression = function() {
-      try {
-        var bgImpressionItem = {};
-        var bgItemWrapper = $(this).closest('li').get(0);
-        
-        bgImpressionItem.id = bgItemWrapper.querySelector('a[href*="/goods/view"]').search.match(/no=([^&]*)/)[1];
-        bgImpressionItem.name = bgItemWrapper.querySelector('.proMd, .goods_name_area .name').textContent.trim();
-        bgImpressionItem.thumbnail = bgItemWrapper.querySelector('img').src;
-        bgImpressionItem.price = parseInt(bgItemWrapper.querySelector('.proPrc strong, .goods_price_area .sale_price .num').textContent.replace(/[\D]/g, ''));
-        bgImpressionItem.brand = bgItemWrapper.querySelector('.proTitle, .goods_name_area .brand_name').textContent.trim();
-        bgImpressionItem.position = $(bgItemWrapper).index('#catalog_page li')+1;
-        bgImpressionItem.list = location.href;
-        
-        if(bgImpressionItem.id && bgImpressionItem.name && bgImpressionItem.price) {
-          window.bigin.event('bg:impression', bgImpressionItem);
-        }
-      } catch (e) {
-        return undefined;
-      }
-    }
-
-	window.addEventListener('load', function() {
-		if(window.bigin && window.bigin.event) {
-          $('#catalog_page a[href*="/goods/view"]').click(biginImpression);
-		}
-	});
-</script>
-<!-- bigin impression tracking end -->
-		<!-- ================= 파트 페이지들 :: END. ================= -->
-		</div>
+  
 
 		<!-- ================= #LAYOUT_FOOTER :: START. 파일위치 : layout_footer/standard.html (default) ================= -->
 

@@ -1,0 +1,421 @@
+
+
+
+.duo_imgr1 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.duo_imgr2 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+.duo_imgr3 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+.showroom{    
+    width: 100%;    
+    margin: auto 0;
+    
+    
+}
+.showroom > .duoroom1 {     
+    padding-top: 5%;
+    text-align: center;
+    display: flex;
+    position: relative;
+    margin: auto 0;
+    width: 100%;        
+    margin: 0 auto;
+    
+    
+        
+}
+
+.duoroom1 > .duo_r1 { 
+    width: 45%;    
+    padding-left: 3%;     
+    object-fit: cover; 
+    height: 100px;      
+}
+
+.duo_r1 > .duo_Btn1{    
+    position: absolute;
+    margin: 0 auto;                    
+    top: 10%;
+    height: 60%;
+    width: 45%;
+    opacity: 0; 
+    transition: opacity 0.4s linear;
+}
+.dotBtn img:hover {
+    background-color:springgreen;   
+    border: 1px solid springgreen;     
+    border-radius: 50%;
+    transition: opacity 0.4s linear;    
+}
+
+.duo_r2 > .duo_Btn2{
+    position: absolute;
+    margin: 0 auto;                    
+    top: 10%;
+    height: 88%;
+    width: 45%;
+    opacity: 0; 
+    transition: opacity 0.4s linear;
+}
+
+.duoroom1 > .duo_r2 {     
+    width: 45%;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+.duo_room2{    
+    position: relative;    
+    width:100%;
+
+}
+
+
+.duo_room2 > .duo_imgr3{
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    padding-top: 5%;    
+    width: 80%;
+}
+
+.showroom > .duo_room2 > .duo_Btn3{    
+    position: absolute;
+    margin: 0 auto;                    
+    left: 5%;
+    height: 94%;
+    width: 80%;
+    top: 5%;
+    opacity: 0; 
+    transition: opacity 0.4s linear;
+}
+.duo_room2:hover .duo_Btn3 {
+    opacity: 1;
+    
+  }
+
+  .duo_r1:hover .duo_Btn1 {
+    opacity: 1;
+    
+  }
+
+  .duo_r2:hover .duo_Btn2 {
+    opacity: 1;
+    
+  }
+
+  
+.dotBtn  > img{    width: 30px;height: 30px; opacity: 1;  }
+.grdot1{ position: absolute;left: 14%; top: 35%; }
+.grdot2{ position: absolute;left: 40%; top: 20%; }
+.grdot3{ position: absolute;left: 30%; top: 60%; }
+.grdot4{ position: absolute;left: 66%; top: 43%; }
+.grdot5{ position: absolute;left: 7%; bottom: 25%; }
+.grdot6{ position: absolute;left: 40%; bottom: 35%; }
+.grdot7{ position: absolute;left: 61%; bottom: 35%; }
+.grdot8{ position: absolute;right: 24%; top: 26%; }
+
+.speech-bubble {
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    top: 44%;
+    left: 22%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.speech-bubble1{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    top: 30%;
+    left: 45%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.speech-bubble2{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    top: 65%;
+    left: 37%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.speech-bubble3{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    top: 24%;
+    left: 70%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.speech-bubble4{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    bottom: 17%;
+    left: 14%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+.speech-bubble5{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    bottom: 40%;
+    left: 26%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+.speech-bubble6{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    bottom: 25%;
+    left: 48%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+.speech-bubble7{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    top: 32%;
+    right: 14%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+.bubble{
+    
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    line-height: 100px;    
+}
+.bool{
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
+    border-radius: 10%;
+    top: 70%;
+    left: 60%;
+    position: absolute;
+    background-color: white;
+}
+
+
+.sb > a:hover{ color: black;}
+.sb > a:focus{ color: black;}
+.sb > a:visited{ color: black;}
+.sb > a {text-decoration: none;}
+
+
+@media screen and (min-width : 1500px){
+
+.showroom{
+    display: flex;
+    width: 100%;
+    height: 650px;
+    
+}
+
+.duoroom1{
+    display: block;
+    width: 45%;
+}
+
+.duo_room2{    
+    display: block;
+    width: 60%;
+}
+
+.duo_r1{    
+    padding-top: 5%;
+    padding-left: 10px;
+}
+
+.grdot1{ position: absolute;left: 20%; top: 53%; }
+
+.speech-bubble{
+    display: none;
+    position: absolute;
+    text-align: center;    
+    width: 150px;    
+    height: 100px;	    
+    font-weight: bold; 
+    top: 60%;
+    left: 25%;    
+    border: rgb(29, 154, 141) 3px solid ;
+    border-radius: 15%;    
+    box-sizing: border-box;
+    
+    
+}
+
+.grdot2{
+    position: absolute; top : 43%;
+}
+
+.speech-bubble1{
+    top: 25%;
+    right: 15%;
+}
+
+.duo_r2{
+    position: absolute;
+    left: 52%;
+    top: 10%;
+}
+
+.duo_Btn2{
+    position: absolute;
+    left: 24%;
+}
+
+.duo_Btn2 > #grdot4{
+    padding-left: 30%;
+    
+}
+
+
+.speech-bubble3{
+    top: 15%;
+}
+
+.duo_Btn3{
+    
+   padding-left: 10%;
+   box-sizing: content-box;
+   position: absolute; 
+}
+.grdot5 {
+    position: absolute;
+}
+
+.grdot5 { 
+    position: absolute;
+    bottom: 30%;
+    left: 18%;
+}
+
+.speech-bubble4{
+    left: 10px;
+    bottom: 80px;
+}
+
+.grdot6 { 
+    position: absolute;
+    bottom: 43%;
+}
+
+.speech-bubble5{ 
+    left: 17%;
+    top: 34%;
+}
+
+.grdot7 {
+    position: absolute;
+    bottom: 43%;
+}
+
+.speech-bubble6{ 
+    left: 63%;
+    bottom: 26%;
+    
+}
+
+.speech-bubble7{
+    left: 45%;
+    top: 9%;
+}
+
+
+
+}
+
+
+
+
+    
+
+
+
+
